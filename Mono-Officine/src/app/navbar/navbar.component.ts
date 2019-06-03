@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostBinding } from '@angular/core';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { AppComponent } from '../app.component';
 
 @Component({
   selector: 'app-navbar',
@@ -11,5 +13,6 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit() {
   }
+
 
 }

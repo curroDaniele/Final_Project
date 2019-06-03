@@ -28,7 +28,7 @@ export class LoginComponent implements OnInit {
       console.log(this.error)
     } else {
       //l'url va cambiato ogni volta
-      this.http.post("http://node12.codenvy.io:32972/login", {
+      this.http.post("http://node11.codenvy.io:33045/login", {
         username: username.value,
         password: password.value
       },
@@ -43,6 +43,9 @@ export class LoginComponent implements OnInit {
 
           if (data == true) {
             this.router.navigate(['/map'])
+            localStorage.setItem("username",username.value)
+            window.location.reload();
+
           } else {
             this.error = "login non ha avuto successo";
           }

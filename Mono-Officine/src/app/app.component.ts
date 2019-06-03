@@ -9,23 +9,36 @@ import { HttpClientModule } from '@angular/common/http';
 })
 export class AppComponent {
   title = 'Mono-Officine';
-/*
-  public visiblel: Boolean = false;
-  public visibler: Boolean = false;
-  public visiblem: Boolean = false;
 
-  register() {
-    this.visibler = true;
-    this.visiblel = false;
-    this.visiblem = false;
+  public navbara: Boolean = false;
+  public navbarb: Boolean = false;
+  private navabrlog: boolean = false;
+
+  navbarin() {
+    this.navbara = true;
+    this.navbarb = false;
   }
 
-  login() {
-    this.visiblel = true;
-    this.visibler = false;
-    this.visiblem = false;
+  ngOnInit() {
+    if (localStorage.getItem("username") != null)
+      this.navabrlog = true
+    else
+      this.navabrlog = false
   }
-*/
+  /*
+    public visiblel: Boolean = false;
+    public visibler: Boolean = false;
+
+    register() {
+      this.visibler = true;
+      this.visiblel = false;
+    }
+
+    login() {
+      this.visiblel = true;
+      this.visibler = false;
+    }
+  */
 
 
 }

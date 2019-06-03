@@ -9,6 +9,7 @@ import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { MapComponent } from './map/map.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { Navbar2Component } from './navbar2/navbar2.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     RegisterComponent,
     LoginComponent,
     MapComponent,
-    NavbarComponent
+    NavbarComponent,
+    Navbar2Component
   ],
   imports: [
     BrowserModule,
